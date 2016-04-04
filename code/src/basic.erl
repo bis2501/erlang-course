@@ -1,8 +1,6 @@
 -module(basic).
 
--export([f/1,g/1,safe/1,preferred/1]).
-
--export([factorial/1,guard/2,guard2/2]).
+-export([factorial/1,factorial2/1,guard/2,guard2/2]).
 -export([even/1, number/1]).
 -export([a/2, b/1]).
 
