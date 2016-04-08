@@ -5,7 +5,7 @@
 -export([map/2,incr/1,decr/1]).
 -export([sum/1,product/1]).
 
--export([silva/1,joel/1]).
+-export([silva/1,joel/1,par/1]).
 
 -export([filter/2,foldr/3,mayor_two/1]).
 
@@ -40,6 +40,12 @@ product([H|T]) -> H * product(T).
 mayor_two(X) -> X>2.
 
 joel(X) -> X>5.
+
+par(X) ->
+  case X rem 2 of
+      0 -> true;
+      _ -> false
+    end.
 
 filter(Pred, L) -> foldr(Pred, L,[]).
 
